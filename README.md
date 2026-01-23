@@ -1,20 +1,35 @@
-# My-way-to-DA-DS
-Привет! Я прохожу 16-недельный интенсив по входу в Data Analytics. Здесь я храню свои ежедневные упражнения, учебные заметки и будущие проекты. Стек: SQL, Python (Pandas/NumPy), Tableau, Статистика
-Мой план 
-Неделя	Фаза	Тема и Стек	Definition of Done (DoD)
-1	Фундамент	Python Basics: Типы данных, списки, словари, циклы.	Скрипт калькулятора на GitHub + README на англ.
-2	Фундамент	SQL Basics: SELECT, WHERE, ORDER BY, тренажеры.	Решено 20+ задач (SQLBolt / ИИ чек).
-3	Фундамент	Статистика & Excel: Mean/Median, Std Dev, Pivot Tables.	Объяснил теорию ИИ своими словами (B1 уровень).
-4	Фундамент	SQL Advanced: JOIN (3+ таблицы), GROUP BY, HAVING.	Пишешь JOIN без подсказок и шпаргалок.
-5	Навыки	Pandas Intro: read_csv, .info(), .describe(), фильтрация.	Загружен и первично изучен реальный датасет.
-6	Навыки	Pandas Deep Dive: merge, groupby, fillna/dropna.	Датасет очищен и агрегирован под бизнес-задачу.
-7	Навыки	SQL Pro: Оконные функции (Row_Number, Rank, Lead/Lag).	Решено 10 сложных задач на аналитический SQL.
-8	Навыки	Визуализация: Matplotlib, Seaborn, корреляции.	Матрица корреляций + 3 графика с инсайтами.
-9	Проекты	BI Инструменты: Tableau или Power BI.	Создан первый дашборд с рабочими фильтрами.
-10	Проекты	Проект №1 (SQL + BI): Анализ продаж.	Start LinkedIn (+100 конт.). Дашборд готов.
-11	Проекты	Проект №2 (Python): Churn Analysis (анализ оттока).	Ноутбук на GitHub: инсайты + рекомендации бизнесу.
-12	Проекты	Showcase: Оформление GitHub и Notion.	Все README на англ., портфолио можно шерить.
-13	Рынок	Resume & LinkedIn: Оптимизация под ключевые слова.	Резюме готово, LinkedIn прогрет (500+ конт.).
-14	Рынок	Тех. тесты: SQL & Logic (Stratascratch/LeetCode).	Решено 15+ задач уровня Medium (SQL).
-15	Рынок	Mock Interviews: Симуляция созвонов с ИИ.	Оценка от "интервьюера" 8/10.
-16	Рынок	Job Hunting: Агрессивные отклики (10-15 в день).	50+ откликов, первые созвоны с HR.
+# Data Analytics Bootcamp — 16 Weeks Intensive 🚀
+
+Привет! Я прохожу 16-недельный интенсив по переходу в Data Analytics. В этом репозитории я храню свои ежедневные упражнения, учебные заметки и будущие проекты.
+
+**Current Status:** Week 1 Completed ✅
+
+---
+
+## 🛠 Stack & Tools
+* **SQL:** Basic & Advanced (Joins, Aggregations)
+* **Python:** Basics (Functions, Loops, Logic)
+* **Excel:** Pivot Tables & Data Analysis
+* **Tools:** VS Code, GitHub, SQLBolt
+
+---
+
+## 📈 Learning Roadmap & Progress
+
+| Week | Phase | Topic | Status |
+| :--- | :--- | :--- | :--- |
+| **1** | **Foundation** | **Python & SQL Basics, Git Setup** | **DONE ✅** |
+| 2 | Foundation | SQL Deep Dive: Joins & Complex Queries | In Progress |
+| 3 | Foundation | Statistics & Excel: Mean/Median, Pivot Tables | Upcoming |
+| 4 | Foundation | SQL Advanced: Window Functions | Upcoming |
+| 5-16 | Skills & Jobs | Pandas, BI Tools, Projects, Interview Prep | Upcoming |
+
+---
+
+## 📂 Week 1 Results:
+- **SQL:** Completed lessons 1-12 on SQLBolt. Mastered `GROUP BY`, `HAVING`, and `JOINS`.
+- **Python:** Created a script for payroll auditing (data cleaning + stats).
+- **Git:** Established repository structure and workflow.
+
+---
+*Based in Palatine, IL. Goal: Data Analyst role in 2026.*
