@@ -35,7 +35,39 @@ I'm transitioning into Data Analytics with a focused, project-based approach. Th
 
 ---
 
-### ✅ Week 2 Restart: Pandas & Visualization (Feb 6-7, 2026)
+### ✅ Week 2: Pandas & Visualization (Jan 26 - Feb 6, 2026)
+
+**Full Timeline:**
+
+#### **Phase 1: Initial Attempt (Jan 26-28)**
+- Completed exploration, cleaning, basic analysis
+- Dataset: Kaggle Retail Sales (1000 transactions)
+- Status: ✅ Pandas basics understood
+
+#### **Phase 2: Visualization Struggle (Jan 29-30)**
+- Attempted matplotlib/seaborn without theory foundation
+- Felt stuck: "I can create charts, but don't understand *when* to use each type"
+- Red flag: Copying code without understanding
+
+#### **Phase 3: AI Council Experiment (Jan 30 - Feb 4)**
+- Built [AI-Learning-Council](https://github.com/Prospis/AI-Learning-Council) project
+- Goal: Automate learning with multi-agent system (Gemini 3 + Claude 4.5)
+- Roles: Architect (Gemini), Tech & Critic (Claude), Mentor (Gemini)
+- **Result:** Added complexity instead of clarity → context loss between agents
+
+#### **Phase 4: Decision & Simplification (Feb 4-5)**
+- Realized: Problem wasn't lack of AI help, but **lack of structured methodology**
+- Decision: Abandon multi-agent system → Work with **ONE mentor (Claude)**
+- New approach: Theory → Practice → Reflection (with cheatsheets)
+
+#### **Phase 5: Successful Restart (Feb 5-6)**
+- Restarted Week 2 from scratch with Claude
+- Added theory before each task ("When do you use a bar chart vs pie chart?")
+- Created 2 reference cheatsheets (Pandas, Visualization)
+- **Breakthrough:** Understanding > Execution
+
+---
+
 **Topics:** Data Analysis with Pandas, Visualization with Matplotlib/Seaborn  
 **Dataset:** [Kaggle Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset) (1000 transactions, 9 features)
 
@@ -44,6 +76,7 @@ I'm transitioning into Data Analytics with a focused, project-based approach. Th
 - **Cleaning:** `pd.to_datetime()`, `pd.cut()`, extracting date components
 - **Analysis:** `.groupby()`, aggregations, filtering, sorting
 - **Visualization:** 6 chart types (bar, pie, line, histogram, heatmap, box plot)
+- **Meta-skill:** Recognizing when a learning method isn't working and adapting
 
 **Key Findings:**
 - 💰 **Total Revenue:** $456,000
@@ -53,11 +86,18 @@ I'm transitioning into Data Analytics with a focused, project-based approach. Th
 - 🔗 **Insight:** Revenue correlates with price (+0.85), NOT age (-0.06)
 
 **Deliverables:**
-- [x] 4 Jupyter Notebooks (exploration, cleaning, analysis, visualization)
+- [x] 1 Comprehensive Jupyter Notebook (all phases: exploration → visualization)
 - [x] 6 Professional charts saved as PNG
 - [x] Clean dataset (`retail_sales_clean.csv`)
+- [x] 2 Cheatsheets ([Pandas](cheatsheets/pandas.md), [Visualization](cheatsheets/visualization.md))
+- [x] Failed experiment: [AI-Learning-Council](https://github.com/Prospis/AI-Learning-Council) *(kept as learning artifact)*
 
-📂 [View Week 2 Project →](Week_2_restart/)
+**What I learned about learning:**
+1. **Simple > Complex:** One focused mentor beats multi-agent automation
+2. **Theory prevents confusion:** Understanding "why" before "how" is crucial
+3. **It's okay to restart:** 2 weeks of quality learning > 1 week of surface-level progress
+4. **Document failures:** [AI Council experiment](https://github.com/Prospis/AI-Learnin) taught me what *doesn't* work
+📂 [View Week 2 Project →](Week_2_Restart/)
 
 ---
 
