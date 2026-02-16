@@ -4,7 +4,7 @@
 **Location:** Palatine, Illinois, USA  
 **Goal:** Junior Data Analyst Role  
 **Target:** May-June 2026  
-**Status:** Week 2 COMPLETED ✅ | Week 3 in progress (Day 5: Mini-Project)
+**Status:** Week 3 COMPLETED ✅ | Week 4 starts Feb 17, 2026
 
 ---
 
@@ -101,15 +101,36 @@ I'm transitioning into Data Analytics with a focused, project-based approach. Th
 
 ---
 
-### 🔄 Week 3: Advanced Pandas & Portfolio (In Progress - Feb 9-13, 2026)
-**Current Task:** Day 5 - Mini-Project (Executive Summary + Business Recommendations)
+### ✅ Week 3: Advanced Pandas + Kaggle Project (Feb 9-16, 2026)
 
-**Planned Topics:**
-- Monday (Feb 9): Final project deliverable (Week 2)
-- Tuesday (Feb 10): Advanced Pandas (`.merge()`, `.pivot_table()`, `.apply()`)
-- Wednesday (Feb 11): Power Query (Excel automation)
-- Thursday (Feb 12): Seaborn deep dive (advanced visualizations)
-- Friday (Feb 13): Portfolio review & GitHub optimization
+**Topics:** Advanced Pandas, Seaborn, Real Kaggle Dataset  
+**Dataset:** [Uber & Lyft Cab Prices - Boston](https://www.kaggle.com/datasets/ravi72munde/uber-lyft-cab-prices) (693k rides)
+
+**Skills Learned:**
+- **Advanced Pandas:** `.merge()`, `.pivot_table()`, `lambda`, `.apply()`, `.agg()`
+- **Seaborn:** `pairplot()`, `jointplot()`, `catplot()`, `boxplot()`
+- **Data Merging:** Time-based joins (rounding to hour)
+- **Large Datasets:** Handling 693k rows, removing duplicates
+
+**Key Findings:**
+- 🚖 **Lyft 12% more expensive** than Uber ($17.35 vs $15.47)
+- 🚗 **Premium segment 5x pricier** (Lux Black XL: $32 vs Shared: $6)
+- 🌧️ **Weather has no impact** on pricing (correlation ~0)
+- 📊 **Most rides $10-20** (99.7% under $50)
+
+**Deliverables:**
+- [x] Jupyter Notebook with full analysis
+- [x] 5 Professional visualizations (bar, histogram, line, boxplot)
+- [x] Data merge: 99.6% rides matched with weather
+- [x] Project README with limitations section
+
+**What I Learned:**
+- Real Kaggle datasets can be messy/limited
+- Not every dataset yields interesting insights (that's okay!)
+- Critical thinking: recognizing dataset limitations
+- Time-based data merging techniques
+
+📂 [View Week 3 Project →](Week_3_Project/)
 
 ---
 
@@ -119,7 +140,7 @@ I'm transitioning into Data Analytics with a focused, project-based approach. Th
 | :--- | :--- | :--- | :---: |
 | **1** | Foundation | SQL Advanced & Python Setup | ✅ |
 | **2** | Skills | Pandas Intro & Real Data | ✅ |
-| **3** | Skills | Advanced Pandas & Power Query | 🔄 |
+| **3** | Skills | Advanced Pandas & Kaggle Project | ✅ |
 | **4** | Skills | SQL Pro (Window Functions) | ⏳ |
 | **5** | Visuals | EDA: Matplotlib & Seaborn | ⏳ |
 | **6** | BI Tools | Power BI Mastery | ⏳ |
@@ -155,6 +176,13 @@ My-way-to-DA-DS/
 ├── council_log.md               ← Daily learning journal
 ├── claude_context.md            ← AI assistant context
 └── cheatsheets/                 ← Pandas, SQL, Visualization reference
+├── Week_3/                      ← Advanced Pandas practice
+│   ├── images/                  ← 5 visualizations
+│   ├── advanced_pandas_day_01-05← Advanced Pandas practice
+├── Week_3_Project/              ← Uber/Lyft Kaggle Analysis
+│   ├── uber_lyft_analysis.ipynb
+│   ├── images/                  ← 5 visualizations
+│   └── README.md
 ```
 
 ---
@@ -198,6 +226,6 @@ This portfolio demonstrates:
 
 *"The capacity to learn is a gift; the ability to learn is a skill; the willingness to learn is a choice."*
 
-**Last Updated:** February 6, 2026  
-**Progress:** 2 of 20-22 weeks completed (~10%)
+**Last Updated:** February 16, 2026  
+**Progress:** 3 of 20-22 weeks completed (~15%)
  
