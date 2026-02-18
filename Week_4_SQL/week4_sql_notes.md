@@ -97,3 +97,100 @@ FROM sales
 ORDER BY sale_date;
 
 
+SELECT  sale_date,
+		region
+        product,
+  		revenue,
+        MAX(revenue) OVER(PARTITION BY region) as max_in_region,
+        revenue - MAX(revenue) OVER(PARTITION BY region) as diff_from_max
+FROM sales
+ORDER BY region;
+
+
+WITH top_saller AS (
+    SELECT 
+        region, 
+        salesperson, 
+        SUM(revenue) as total_revenue, 
+        RANK() OVER(PARTITION BY region ORDER BY SUM(revenue) DESC) as rank
+    FROM sales
+    GROUP BY region, salesperson
+)
+SELECT * FROM top_saller
+WHERE rank = 1;
+
+
+WITH
+    seller_totals AS (
+        SELECT
+            salesperson,
+            SUM(revenue) as total_revenue
+        FROM sales
+        GROUP BY salesperson
+    ),
+    top3_sellers AS (
+        SELECT
+            salesperson,
+            total_revenue,
+            RANK() OVER(ORDER BY total_revenue DESC) as rank
+        FROM seller_totals
+    )
+SELECT 
+	sales.*,
+    total_revenue,
+	top3_sellers.rank
+FROM sales
+JOIN top3_sellers ON sales.salesperson = top3_sellers.salesperson
+WHERE top3_sellers.rank <= 3
+ORDER BY top3_sellers.rank, sales.sale_date;
+
+
+WITH
+    avg_region AS (
+        SELECT
+            region,
+      		AVG(revenue) as avg_revenue
+        FROM sales
+        GROUP BY region
+    )
+SELECT 
+	sales.*,
+   	ROUND(avg_region.avg_revenue, 2)
+	
+FROM sales
+JOIN avg_region ON sales.region = avg_region.region
+WHERE sales.revenue > avg_region.avg_revenue
+ORDER BY sales.region;
+
+
+WITH ConsecutiveNums AS (  
+		SELECT
+			num,
+			(num = Lead(num,1)  OVER (ORDER by id)
+    		AND
+    		num = Lead(num,2)  OVER (ORDER by id)) as nums 
+		FROM Logs
+)
+SELECT DISTINCT num AS ConsecutiveNums
+FROM ConsecutiveNums
+WHERE nums = 1;
+
+
+WITH 
+	max_salary AS (
+      	SELECT
+      		name,
+      		salary,
+      		departmentId,
+      		RANK() OVER(PARTITION BY departmentId ORDER by salary desc) as rank
+		FROM Employee
+)
+
+SELECT
+		Department.name as Department,
+        max_salary.name as Employee,
+        max_salary.salary AS Salary
+FROM max_salary
+JOIN Department ON max_salary.departmentId = Department.id
+WHERE rank = 1;      
+    
