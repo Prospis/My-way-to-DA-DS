@@ -194,3 +194,59 @@ FROM max_salary
 JOIN Department ON max_salary.departmentId = Department.id
 WHERE rank = 1;      
     
+
+
+    WITH sal as (
+	SELECT
+    	salary,
+    	DENSE_RANK() OVER(ORDER BY salary DESC) AS rank
+	FROM Employee
+)
+SELECT(
+   SELECT DISTINCT salary 
+FROM sal
+WHERE rank = 4)
+AS getNthHighestSalary;
+
+
+
+
+
+SELECT 
+	id,
+    CASE
+    	WHEN id % 2 = 1 THEN COALESCE(LEAD(student,1) OVER(ORDER BY id),student)
+        ELSE LAG(student,1) OVER(ORDER BY id)
+    END as swapped_student
+    
+FROM Seat;
+
+
+
+
+
+SELECT
+	email as Email
+FROM Person
+GROUP by email
+HAVING COUNT(id) > 1
+
+
+
+SELECT
+	score,
+    DENsE_RANK() OVER(ORDER BY score DESC) as rank
+FROM Scores
+
+
+
+
+WITH temperatura AS(
+  SELECT
+	id,
+    temperature > LAG(temperature) OVER(ORDER BY recordDate) as rec
+  FROM Weather
+  )
+SELECT id
+FROM temperatura
+Where rec = 1;
