@@ -1,0 +1,1 @@
+SELECT DISTINCT Season FROM premier_league ORDER BY Season;
